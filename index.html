@@ -56,7 +56,7 @@
       <div class="spmenu-conainer">
         <div class="spmenu-login">
           <div class="spmenu-login-inner">
-            <a class="btn btn-primary btn-block" href="">
+            <a class="btn btn-primary btn-block" href="./login.html">
               <i data-feather="log-in" class="d-inline-block align-middle"></i>
               <span class="d-inline-block align-middle font-weight-bold">ログイン</span>
             </a>
@@ -269,7 +269,7 @@
                           </div>
                           <div class="modal-footer">
                             <div class="btn-group m-0 w-100" role="group">
-                              <button type="button" class="btn btn-light rounded-0 w-100 font-weight-bold py-3">カートに追加</button>
+                              <button type="button" class="addcart btn btn-light rounded-0 w-100 font-weight-bold py-3">カートに追加</button>
                               <button type="button" class="btn btn-primary rounded-0 w-100 font-weight-bold py-3" onclick="location.href='./cart.html'">お会計に進む</button>
                             </div>
                             <p class="modal-close" data-dismiss="modal" aria-label="Close">メニューに戻る</p>
@@ -361,7 +361,7 @@
                           </div>
                           <div class="modal-footer">
                             <div class="btn-group m-0 w-100" role="group">
-                              <button type="button" class="btn btn-light rounded-0 w-100 font-weight-bold py-3">カートに追加</button>
+                              <button type="button" class="addcart btn btn-light rounded-0 w-100 font-weight-bold py-3">カートに追加</button>
                               <button type="button" class="btn btn-primary rounded-0 w-100 font-weight-bold py-3" onclick="location.href='./cart.html'">お会計に進む</button>
                             </div>
                             <p class="modal-close" data-dismiss="modal" aria-label="Close">メニューに戻る</p>
@@ -453,7 +453,7 @@
                           </div>
                           <div class="modal-footer">
                             <div class="btn-group m-0 w-100" role="group">
-                              <button type="button" class="btn btn-light rounded-0 w-100 font-weight-bold py-3">カートに追加</button>
+                              <button type="button" class="addcart btn btn-light rounded-0 w-100 font-weight-bold py-3">カートに追加</button>
                               <button type="button" class="btn btn-primary rounded-0 w-100 font-weight-bold py-3" onclick="location.href='./cart.html'">お会計に進む</button>
                             </div>
                             <p class="modal-close" data-dismiss="modal" aria-label="Close">メニューに戻る</p>
@@ -483,15 +483,15 @@
       <div class="footer-menu py-4">
         <div class="container">
           <div class="d-flex justify-content-start flex-wrap">
-            <a class="text-white" href="">ホーム</a>
+            <a class="text-white" href="./index.html">ホーム</a>
             <a class="text-white mx-3" href="">お知らせ一覧</a>
             <a class="text-white" href="">店舗詳細</a>
           </div>
           <div class="d-flex justify-content-start flex-wrap mt-3">
             <a class="text-white small mr-3 mb-2" href="">お問い合わせ</a>
             <a class="text-white small mr-3 mb-2" href="">キャンセルポリシー</a>
-            <a class="text-white small mr-3 mb-2" href="">このシステムについて</a>
-            <a class="text-white small mr-3 mb-2" href="">運営会社</a>
+            <a class="text-white small mr-3 mb-2" href="https://system.take-eats.jp" target="_blank">このシステムについて</a>
+            <a class="text-white small mr-3 mb-2" href="https://lamp.jp" target="_blank">運営会社</a>
           </div>
         </div>
       </div>
@@ -599,7 +599,7 @@
                   </div>
                   <div class="txt">
                     <p class="ttl">デリバリー</p>
-                    <p class="desc">商品を自宅へ配達</p>
+                    <p class="desc">今スグ食べたいときに</p>
                   </div>
                 </button>
                 <button class="btn btn-primary btn-select mt-3" type="button">
@@ -654,7 +654,7 @@
                   </div>
                   <div class="txt">
                     <p class="ttl">お取り寄せ</p>
-                    <p class="desc">商品を全国配送</p>
+                    <p class="desc">贈り物に最適</p>
                   </div>
                 </button>
               </div>
@@ -672,25 +672,23 @@
                     <option>2020年1月5日（金）</option>
                   </select>
                 </div>
-                <div class="form-row">
-                  <div class="col-4">
-                    <select id="deliveryTime" class="form-control d-inline-block align-middle w-auto" name="deliveryTime">
-                      <option>11</option>
-                      <option>12</option>
-                      <option>13</option>
-                      <option>14</option>
-                    </select>
-                    <span class="d-inline-block align-middle ml-1">時</span>
-                  </div>
-                  <div class="col-4">
-                    <select id="deliverySeconds" class="form-control d-inline-block align-middle w-auto" name="deliverySeconds">
-                      <option>00</option>
-                      <option>15</option>
-                      <option>30</option>
-                      <option>45</option>
-                    </select>
-                    <span class="d-inline-block align-middle ml-1">分</span>
-                  </div>
+                <div class="d-inline-block align-middle mr-2">
+                  <select id="deliveryTime" class="form-control form-control-sm d-inline-block align-middle w-auto" name="deliveryTime">
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                  </select>
+                  <span class="d-inline-block align-middle ml-1 small">時</span>
+                </div>
+                <div class="d-inline-block align-middle">
+                  <select id="deliverySeconds" class="form-control form-control-sm d-inline-block align-middle w-auto" name="deliverySeconds">
+                    <option>00</option>
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
+                  </select>
+                  <span class="d-inline-block align-middle ml-1 small">分</span>
                 </div>
                 <div class="text-center mt-4">
                   <button class="btn btn-primary rounded-pill" type="button">次へ進む</button>

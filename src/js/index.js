@@ -94,6 +94,17 @@ $(function () {
     interval: false,
   });
 
+  // --- home ------------------------------------ //
+  $(".addcart").on("click", function () {
+    alert("カートに追加されました");
+  });
+
+  // --- cart ------------------------------------ //
+  $(".okimochi-btns .btn").on("click", function () {
+    $(".okimochi-btns .btn").removeClass("active");
+    $(this).addClass("active");
+  });
+
   // --- form ------------------------------------ //
   // 支払い方法
   $("select#pay").on("change", function () {
