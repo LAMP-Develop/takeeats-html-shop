@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>お支払い情報入力 | 【公式】TakeCafe｜テイクアウト（お持ち帰り）</title>
+    <title>お届け先情報 | 【公式】TakeCafe｜テイクアウト（お持ち帰り）</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" />
     <link rel="stylesheet" href="./dist/css/style.css" />
     <script src="./dist/js/bundle.js" defer></script>
@@ -118,118 +118,58 @@
     </nav>
     <!-- #spmenu -->
     <main id="main">
-      <section class="mv">
+      <section class="mv bg-light">
         <div class="container">
-          <h2>お支払い情報入力</h2>
+          <h2>お届け先の追加・削除</h2>
         </div>
       </section>
-      <div class="mv__step">
+      <div class="py-5">
         <div class="container">
-          <ol class="mv__step-count">
-            <li class="visited"><em>情報入力</em></li>
-            <li class="current"><em>お支払い</em></li>
-            <li class=""><em>確認</em></li>
-            <li class=""><em>完了</em></li>
-          </ol>
-        </div>
-      </div>
-
-      <form action="./confirm.html" method="post">
-        <div class="py-4">
-          <div class="container">
-            <h3 class="form-ttl">お支払い情報</h3>
-            <div class="form-group">
-              <label class="small d-block form-must" for="">お支払い方法(選択)</label>
-              <select class="form-control" id="pay" name="pay">
-                <option value="0" selected>クレジットカード決済</option>
-                <option value="1">店舗でお支払い</option>
-              </select>
-              <script
-                type="text/javascript"
-                src="https://checkout.pay.jp/"
-                class="payjp-button"
-                data-key="pk_test_a0727685f74f89262de1a310"
-                data-submit-text="更新して閉じる"
-                data-partial="true"
-              ></script>
-            </div>
-            <!-- .form-group -->
-            <div class="form-group">
-              <label class="small d-block" for="">ポイントを使用する</label>
-              <div class="input-group">
-                <input type="number" value="0" class="form-control" aria-describedby="basic-pt" />
-                <div class="input-group-append">
-                  <span class="input-group-text" id="basic-pt">pt</span>
+          <div class="text-center">
+            <a class="btn btn-block btn-outline-secondary text-body position-relative" href="">
+              <span>お届け先追加</span>
+              <i data-feather="arrow-right"></i>
+            </a>
+          </div>
+          <div class="mt-5">
+            <h3 class="form-ttl">
+              <span>お届け先一覧</span>
+              <span class="float-right small font-weight-normal">3件</span>
+            </h3>
+            <div class="addressee-list">
+              <div class="addressee-item active">
+                <div class="addressee-head">
+                  <i data-feather="send" class="text-primary" width="14" height="14"></i>
+                  <span>お届け先1</span>
+                </div>
+                <div class="addressee-body">
+                  <p>京都府京都市中京区下妙覚寺町195</p>
+                  <div class="addressee-edit">
+                    <a class="btn btn-outline-primary bg-white mr-3" href="">編集</a>
+                    <a class="btn btn-primary" href="">削除</a>
+                  </div>
                 </div>
               </div>
-              <small id="" class="form-text d-block mt-1 text-right">
-                保有ポイント
-                <span id="have-pt" class="ml-2">120</span>
-                pt
-              </small>
+              <!-- .addressee-item -->
+              <div class="addressee-item">
+                <div class="addressee-head">
+                  <i data-feather="send" class="text-secondary" width="14" height="14"></i>
+                  <span>お届け先1</span>
+                </div>
+                <div class="addressee-body">
+                  <p>京都府京都市中京区下妙覚寺町195</p>
+                  <div class="addressee-edit">
+                    <a class="btn btn-outline-primary bg-white mr-3" href="">編集</a>
+                    <a class="btn btn-primary" href="">削除</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .addressee-item -->
             </div>
-            <!-- .form-group -->
-            <div class="form-group mb-0">
-              <label class="small d-block" for="">クーポンのご利用</label>
-              <input type="text" name="coupon" class="form-control" id="coupon" />
-              <small id="couponSuccess" class="form-text mt-1 text-primary" style="display: none">現在ご利用いただけないクーポンです。</small>
-            </div>
-            <!-- .form-group -->
+            <!-- .addressee-list -->
           </div>
         </div>
-        <div class="py-4">
-          <h3 class="ttl-horizon">
-            <span class="d-block container">領収書について</span>
-          </h3>
-          <div class="container">
-            <div class="form-group form-check mb-0">
-              <input type="checkbox" class="form-check-input" id="receipt" />
-              <label class="form-check-label" for="receipt">領収書をつける</label>
-            </div>
-          </div>
-        </div>
-        <div class="py-4 cart__amount">
-          <h3 class="ttl-horizon">
-            <span class="d-block container">合計金額</span>
-          </h3>
-          <div class="container">
-            <table class="w-100 table table-borderless">
-              <tbody>
-                <tr>
-                  <th>小計</th>
-                  <td>¥ 1,500</td>
-                </tr>
-                <tr>
-                  <th>消費税</th>
-                  <td>¥ 1,500</td>
-                </tr>
-                <tr>
-                  <th>クーポン利用</th>
-                  <td class="text-primary">-¥ 100</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th>合計</th>
-                  <td>¥ 1,850</td>
-                </tr>
-                <tr class="small">
-                  <th>獲得ポイント</th>
-                  <td>18pt</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-        <div class="py-4 bg-light">
-          <div class="container">
-            <div class="d-flex justify-content-center form-btns">
-              <a class="btn btn-lg bg-white btn-back mr-2" href="./cart.html">戻る</a>
-              <button class="btn btn-lg btn-primary" type="submit">確認画面へ</button>
-            </div>
-          </div>
-        </div>
-      </form>
+      </div>
     </main>
     <!-- #main -->
     <footer id="footer">

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注文履歴 | 【公式】TakeCafe｜テイクアウト（お持ち帰り）</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <script src="./dist/js/bundle.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navi">
+        <h1 class="navi-brand">
+          <a href="./index.html">LOGO</a>
+        </h1>
+        <ul class="navi-nav ml-auto">
+          <li class="navi-item d-md-block d-none">
+            <a class="navi-link navi-tel" href="#">
+              <i data-feather="phone-call" class="mr-1"></i>
+              <span>123-4567-8901</span>
+            </a>
+          </li>
+          <li class="navi-item">
+            <a class="navi-link position-relative" href="./cart.html">
+              <span class="cart-count">1</span>
+              <i data-feather="shopping-cart"></i>
+              <span class="navi-link-txt">カート</span>
+            </a>
+          </li>
+          <li class="navi-item">
+            <button id="spopen" class="navi-link btn btn-link rounded-0">
+              <i data-feather="menu"></i>
+              <span class="navi-link-txt">メニュー</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- #header -->
+    <nav id="spmenu" class="spmenu">
+      <div class="spmenu-close text-center">
+        <i data-feather="x"></i>
+        <span class="d-block">閉じる</span>
+      </div>
+      <div class="spmenu-conainer">
+        <div class="spmenu-login">
+          <div class="spmenu-login-inner">
+            <a class="btn btn-primary btn-block" href="./login.html">
+              <i data-feather="log-in" class="d-inline-block align-middle"></i>
+              <span class="d-inline-block align-middle font-weight-bold">ログイン</span>
+            </a>
+            <p class="mb-0 mt-2 text-center">
+              <a class="small text-body border-bottom" href="./register.html">新規会員登録はこちら</a>
+            </p>
+          </div>
+        </div>
+        <ul class="spmenu-links">
+          <li>
+            <a href="./member.html">
+              <i data-feather="credit-card" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">会員情報の確認・編集</span>
+            </a>
+          </li>
+          <li>
+            <a href="./addressee.html">
+              <i data-feather="home" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">お届け先の追加・削除</span>
+            </a>
+          </li>
+          <li>
+            <a href="./past-orders.html">
+              <i data-feather="list" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">注文履歴</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i data-feather="info" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">店舗からのお知らせ</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i data-feather="book-open" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">ご利用ガイド</span>
+            </a>
+          </li>
+        </ul>
+        <div class="spmenu-shop">
+          <div class="spmenu-shop-info">
+            <p class="name">TakeCafe</p>
+            <p class="address">
+              〒606-0000
+              <br />
+              京都府京都市中京区下妙覚寺町195 KMGビル4F
+            </p>
+            <p class="time">
+              <span class="text-muted">営業時間</span>
+              <br />
+              10:00〜18:00
+            </p>
+            <p class="mb-0 link"><a href="">詳しく見る</a></p>
+          </div>
+          <div class="spmenu-btns mt-3">
+            <a class="btn btn-block btn-outline-light" href="">
+              <i data-feather="map-pin" class="d-inline-block align-middle text-primary mr-1"></i>
+              <span class="d-inline-block align-middle text-body small">Googlemapをみる</span>
+            </a>
+            <a class="btn btn-block btn-outline-light mt-2" href="">
+              <i data-feather="phone" class="d-inline-block align-middle text-primary mr-1"></i>
+              <span class="d-inline-block align-middle text-body small">1234-567-890</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- #spmenu -->
+    <main id="main">
+      <section class="mv bg-light">
+        <div class="container">
+          <h2>注文履歴</h2>
+        </div>
+      </section>
+      <div class="py-5">
+        <div class="container">
+          <p class="text-right">3件</p>
+        </div>
+        <div class="orders">
+          <div class="orders-item">
+            <div class="orders-head">
+              <table class="table table-sm table-borderless m-0">
+                <thead>
+                  <tr>
+                    <th>注文番号</th>
+                    <th>デリバリー注文</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>000000000000</td>
+                  <td>2020/01/01 19:00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="orders-body">
+              <div class="orders-list">
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="orders-foot cart__amount">
+              <table class="w-100 table table-borderless">
+                <tbody>
+                  <tr>
+                    <th>小計</th>
+                    <td>¥ 2,940</td>
+                  </tr>
+                  <tr>
+                    <th>消費税</th>
+                    <td>¥ 235</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <td>¥ 3,175</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="mt-4 text-center">
+                <a class="btn btn-primary rounded-pill" href="">再注文する</a>
+              </div>
+            </div>
+          </div>
+          <!-- .orders-item -->
+          <div class="orders-item">
+            <div class="orders-head">
+              <table class="table table-sm table-borderless m-0">
+                <thead>
+                  <tr>
+                    <th>注文番号</th>
+                    <th>デリバリー注文</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>000000000000</td>
+                  <td>2020/01/01 19:00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="orders-body">
+              <div class="orders-list">
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="orders-foot cart__amount">
+              <table class="w-100 table table-borderless">
+                <tbody>
+                  <tr>
+                    <th>小計</th>
+                    <td>¥ 2,940</td>
+                  </tr>
+                  <tr>
+                    <th>消費税</th>
+                    <td>¥ 235</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <td>¥ 3,175</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="mt-4 text-center">
+                <a class="btn btn-primary rounded-pill" href="">再注文する</a>
+              </div>
+            </div>
+          </div>
+          <!-- .orders-item -->
+          <div class="orders-item">
+            <div class="orders-head">
+              <table class="table table-sm table-borderless m-0">
+                <thead>
+                  <tr>
+                    <th>注文番号</th>
+                    <th>デリバリー注文</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>000000000000</td>
+                  <td>2020/01/01 19:00</td>
+                </tr>
+              </table>
+            </div>
+            <div class="orders-body">
+              <div class="orders-list">
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+                <div class="orders-list-menu">
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <p class="name">トマトとエビのパスタ</p>
+                  <div class="info">
+                    <span class="count">1個</span>
+                    <span class="price">980</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="orders-foot cart__amount">
+              <table class="w-100 table table-borderless">
+                <tbody>
+                  <tr>
+                    <th>小計</th>
+                    <td>¥ 2,940</td>
+                  </tr>
+                  <tr>
+                    <th>消費税</th>
+                    <td>¥ 235</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <td>¥ 3,175</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="mt-4 text-center">
+                <a class="btn btn-primary rounded-pill" href="">再注文する</a>
+              </div>
+            </div>
+          </div>
+          <!-- .orders-item -->
+        </div>
+        <!-- .orders -->
+      </div>
+    </main>
+    <!-- #main -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <div class="container">
+          <a href="./index.html">LOGO</a>
+        </div>
+      </div>
+      <div class="footer-menu py-4">
+        <div class="container">
+          <div class="d-flex justify-content-start flex-wrap">
+            <a class="text-white" href="./index.html">ホーム</a>
+            <a class="text-white mx-3" href="">お知らせ一覧</a>
+            <a class="text-white" href="">店舗詳細</a>
+          </div>
+          <div class="d-flex justify-content-start flex-wrap mt-3">
+            <a class="text-white small mr-3 mb-2" href="">お問い合わせ</a>
+            <a class="text-white small mr-3 mb-2" href="">キャンセルポリシー</a>
+            <a class="text-white small mr-3 mb-2" href="https://system.take-eats.jp" target="_blank">このシステムについて</a>
+            <a class="text-white small mr-3 mb-2" href="https://lamp.jp" target="_blank">運営会社</a>
+          </div>
+        </div>
+      </div>
+      <span class="footer-socket">©2020 TakeCafe</span>
+    </footer>
+    <!-- #footer -->
+    <div class="overray"></div>
+  </body>
+</html>
