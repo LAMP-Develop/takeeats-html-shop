@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ご注文ありがとうございました | 【公式】TakeCafe｜テイクアウト（お持ち帰り）</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <script src="./dist/js/bundle.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navi">
+        <h1 class="navi-brand">
+          <a href="./index.html">LOGO</a>
+        </h1>
+        <ul class="navi-nav ml-auto">
+          <li class="navi-item d-md-block d-none">
+            <a class="navi-link navi-tel" href="#">
+              <i data-feather="phone-call" class="mr-1"></i>
+              <span>123-4567-8901</span>
+            </a>
+          </li>
+          <li class="navi-item">
+            <a class="navi-link position-relative" href="./cart.html">
+              <span class="cart-count">0</span>
+              <i data-feather="shopping-cart"></i>
+              <span class="navi-link-txt">カート</span>
+            </a>
+          </li>
+          <li class="navi-item">
+            <button id="spopen" class="navi-link btn btn-link rounded-0">
+              <i data-feather="menu"></i>
+              <span class="navi-link-txt">メニュー</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- #header -->
+    <nav id="spmenu" class="spmenu">
+      <div class="spmenu-close text-center">
+        <i data-feather="x"></i>
+        <span class="d-block">閉じる</span>
+      </div>
+      <div class="spmenu-conainer">
+        <div class="spmenu-login">
+          <div class="spmenu-login-inner">
+            <a class="btn btn-primary btn-block" href="">
+              <i data-feather="log-in" class="d-inline-block align-middle"></i>
+              <span class="d-inline-block align-middle font-weight-bold">ログイン</span>
+            </a>
+            <p class="mb-0 mt-2 text-center">
+              <a class="small text-body border-bottom" href="">新規会員登録はこちら</a>
+            </p>
+          </div>
+        </div>
+        <ul class="spmenu-links">
+          <li>
+            <a href="">
+              <i data-feather="credit-card" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">会員情報の確認・編集</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i data-feather="home" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">お届け先の追加・削除</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i data-feather="list" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">注文履歴</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i data-feather="info" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">店舗からのお知らせ</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i data-feather="book-open" class="d-inline-block align-middle text-primary mr-2"></i>
+              <span class="d-inline-block align-middle text-body">ご利用ガイド</span>
+            </a>
+          </li>
+        </ul>
+        <div class="spmenu-shop">
+          <div class="spmenu-shop-info">
+            <p class="name">TakeCafe</p>
+            <p class="address">
+              〒606-0000
+              <br />
+              京都府京都市中京区下妙覚寺町195 KMGビル4F
+            </p>
+            <p class="time">
+              <span class="text-muted">営業時間</span>
+              <br />
+              10:00〜18:00
+            </p>
+            <p class="mb-0 link"><a href="">詳しく見る</a></p>
+          </div>
+          <div class="spmenu-btns mt-3">
+            <a class="btn btn-block btn-outline-light" href="">
+              <i data-feather="map-pin" class="d-inline-block align-middle text-primary mr-1"></i>
+              <span class="d-inline-block align-middle text-body small">Googlemapをみる</span>
+            </a>
+            <a class="btn btn-block btn-outline-light mt-2" href="">
+              <i data-feather="phone" class="d-inline-block align-middle text-primary mr-1"></i>
+              <span class="d-inline-block align-middle text-body small">1234-567-890</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- #spmenu -->
+    <main id="main">
+      <div class="thanks py-5">
+        <div class="container">
+          <h2>
+            <i data-feather="check-square" width="36" height="36"></i>
+            <span>ご注文を受け付けました！</span>
+          </h2>
+          <p class="text-center font-weight-bold mt-3">
+            注文番号は
+            <span class="text-primary">000000000000</span>
+            です。
+          </p>
+          <div class="thanks-menu">
+            <div>
+              <img src="./dist/images/c1item_1.png" alt="" />
+            </div>
+            <div>
+              <img src="./dist/images/c1item_2.png" alt="" />
+            </div>
+            <div>
+              <img src="./dist/images/c1item_3.png" alt="" />
+            </div>
+          </div>
+          <p class="text-center">
+            ご注文ありがとうございます！
+            <br />
+            ご入力いただいたメールアドレス宛に
+            <br />
+            ご注文内容の詳細をお送りいたしました。
+          </p>
+          <p class="text-center">
+            ご注文内容は
+            <a href="">注文履歴</a>
+            よりご確認下さい。
+          </p>
+          <hr />
+          <div class="thanks-date form-group">
+            <label for="" class="small d-block">お受け取り希望日時</label>
+            <p class="mb-0 font-weight-bold text-primary">2020/01/01 11:00</p>
+          </div>
+          <hr />
+          <div class="cart__amount">
+            <table class="w-100 table table-borderless">
+              <tbody>
+                <tr>
+                  <th>小計</th>
+                  <td>¥ 1,500</td>
+                </tr>
+                <tr>
+                  <th>消費税</th>
+                  <td>¥ 1,500</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>合計</th>
+                  <td>¥ 1,850</td>
+                </tr>
+                <tr class="small">
+                  <th>獲得ポイント</th>
+                  <td>18pt</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+        <div class="ttl-horizon"></div>
+        <div class="container">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853398534!2d139.76493611520053!3d35.68124053757898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1600235731153!5m2!1sja!2sjp"
+            ></iframe>
+          </div>
+        </div>
+        <div class="border-top py-3 mt-3">
+          <div class="container">
+            <p class="m-0">
+              <a href="">
+                <i data-feather="map-pin" class="mr-1"></i>
+                <span class="text-body">GoogleMapをみる</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="border-top border-bottom py-3">
+          <div class="container">
+            <p class="m-0">
+              <a href="">
+                <i data-feather="info" class="mr-1"></i>
+                <span class="text-body">店舗情報をみる</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- #main -->
+    <footer id="footer">
+      <div class="footer-logo">
+        <div class="container">
+          <a href="./index.html">LOGO</a>
+        </div>
+      </div>
+      <div class="footer-menu py-4">
+        <div class="container">
+          <div class="d-flex justify-content-start flex-wrap">
+            <a class="text-white" href="">ホーム</a>
+            <a class="text-white mx-3" href="">お知らせ一覧</a>
+            <a class="text-white" href="">店舗詳細</a>
+          </div>
+          <div class="d-flex justify-content-start flex-wrap mt-3">
+            <a class="text-white small mr-3 mb-2" href="">お問い合わせ</a>
+            <a class="text-white small mr-3 mb-2" href="">キャンセルポリシー</a>
+            <a class="text-white small mr-3 mb-2" href="">このシステムについて</a>
+            <a class="text-white small mr-3 mb-2" href="">運営会社</a>
+          </div>
+        </div>
+      </div>
+      <span class="footer-socket">©2020 TakeCafe</span>
+    </footer>
+    <!-- #footer -->
+    <div class="overray"></div>
+  </body>
+</html>
