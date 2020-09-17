@@ -34,6 +34,16 @@
       font-size: 90%;
     }
   }
+  &-btns {
+    .btn {
+      &-back {
+        width: 30%;
+      }
+      &-primary {
+        width: 60%;
+      }
+    }
+  }
 }
 
 #payjp_checkout_box {
@@ -47,7 +57,7 @@
     background-color: #4a4a4a !important;
     border-color: #4a4a4a !important;
     border-radius: 0.4rem !important;
-    padding-top: 0.4rem !important;
-    padding-bottom: 0.4rem !important;
+    padding: 0.7rem 1rem !important;
+    font-weight: bold !important;
   }
 }

@@ -118,7 +118,7 @@
     </nav>
     <!-- #spmenu -->
     <main id="main">
-      <div class="history-back">
+      <div class="history-back d-md-none">
         <div class="container">
           <a href="./index.html">
             <i data-feather="chevron-left"></i>
@@ -132,220 +132,226 @@
         </div>
       </section>
       <!-- .mv -->
-      <div class="cart__list pb-4">
-        <div class="container">
-          <ol>
-            <li>
-              <div class="thumbnail">
-                <img src="./dist/images/c1item_1.png" alt="" />
-              </div>
-              <div class="info">
-                <p class="name">トマトとエビのパスタ</p>
-                <span class="options"></span>
-                <p class="price">980</p>
-                <select class="form-control form-control-sm w-auto" name="">
-                  <option selected>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="delete">
-                <button class="btn btn-sm btn-primary btn-delete">削除</button>
-              </div>
-            </li>
-            <li>
-              <div class="thumbnail">
-                <img src="./dist/images/c1item_2.png" alt="" />
-              </div>
-              <div class="info">
-                <p class="name">バジルソースのパスタ</p>
-                <span class="options">大盛り 150円</span>
-                <p class="price">980</p>
-                <select class="form-control form-control-sm w-auto" name="">
-                  <option selected>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="delete">
-                <button class="btn btn-sm btn-primary btn-delete">削除</button>
-              </div>
-            </li>
-            <li>
-              <div class="thumbnail">
-                <img src="./dist/images/c1item_3.png" alt="" />
-              </div>
-              <div class="info">
-                <p class="name">ミートソースパスタ</p>
-                <p class="price">980</p>
-                <select class="form-control form-control-sm w-auto" name="">
-                  <option selected>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="delete">
-                <button class="btn btn-sm btn-primary btn-delete">削除</button>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-      <!-- .cart__list -->
-      <div class="cart__delidate pb-4">
-        <h3 class="ttl-horizon">
-          <span class="d-block container">お受け取りについて</span>
-        </h3>
-        <div class="container">
-          <div class="form-group">
-            <label for="changeReceive" class="small d-block">お受け取り方法</label>
-            <select id="changeReceive" class="form-control" name="changeReceive">
-              <option>お持ち帰り(テイクアウト)</option>
-              <option>デリバリー(配達)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="changeDeliveryDate" class="small d-block">お受け取り日時</label>
-            <select id="changeDeliveryDate" class="form-control" name="changeDeliveryDate">
-              <option>2020年1月1日（本日）</option>
-              <option>2020年1月2日（明日）</option>
-              <option>2020年1月3日（水）</option>
-              <option>2020年1月4日（木）</option>
-              <option>2020年1月5日（金）</option>
-            </select>
-          </div>
-          <div class="d-inline-block align-middle mr-2">
-            <select id="changeDeliveryTime" class="form-control form-control-sm d-inline-block align-middle w-auto" name="changeDeliveryTime">
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-            </select>
-            <span class="d-inline-block align-middle ml-1 small">時</span>
-          </div>
-          <div class="d-inline-block align-middle">
-            <select id="changeDeliverySeconds" class="form-control form-control-sm d-inline-block align-middle w-auto" name="changeDeliverySeconds">
-              <option>00</option>
-              <option>15</option>
-              <option>30</option>
-              <option>45</option>
-            </select>
-            <span class="d-inline-block align-middle ml-1 small">分</span>
-          </div>
-          <p class="text-danger small mt-3">※日時やお受け取り場所の変更内容によっては商品がご注文いただけない場合がございます。</p>
-        </div>
-      </div>
-      <div class="cart__option">
-        <h3 class="ttl-horizon mb-0">
-          <span class="d-block container">オプション</span>
-        </h3>
-        <div id="collapse-wrap" class="collapse-wrap">
-          <!-- collapse -->
-          <div id="head-okimochi" data-toggle="collapse" data-target="#content-okimochi" aria-expanded="false" aria-controls="content-okimochi">
-            <span class="d-block container">
-              <i data-feather="heart" class="text-primary d-inline-block align-middle mr-2"></i>
-              <span class="d-inline-block align-middle">「TakeCafe」に応援金を送る</span>
-              <i data-feather="plus-circle" class="position-absolute"></i>
-            </span>
-          </div>
-          <div id="content-okimochi" class="collapse container text-center" aria-labelledby="head-okimochi" data-parent="#collapse-wrap">
-            <div class="btn-group okimochi-btns" role="group">
-              <button type="button" class="btn btn-outline-secondary active">￥0</button>
-              <button type="button" class="btn btn-outline-secondary">￥100</button>
-              <button type="button" class="btn btn-outline-secondary">￥200</button>
-              <button type="button" class="btn btn-outline-secondary">￥500</button>
-              <button type="button" class="btn btn-outline-secondary">￥1,000</button>
+      <div class="pc-two">
+        <div>
+          <div class="cart__list pb-4 pt-md-4">
+            <div class="container">
+              <ol>
+                <li>
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_1.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <p class="name">トマトとエビのパスタ</p>
+                    <span class="options"></span>
+                    <p class="price">980</p>
+                    <select class="form-control form-control-sm w-auto" name="">
+                      <option selected>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="delete">
+                    <button class="btn btn-sm btn-primary btn-delete">削除</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_2.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <p class="name">バジルソースのパスタ</p>
+                    <span class="options">大盛り 150円</span>
+                    <p class="price">980</p>
+                    <select class="form-control form-control-sm w-auto" name="">
+                      <option selected>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="delete">
+                    <button class="btn btn-sm btn-primary btn-delete">削除</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumbnail">
+                    <img src="./dist/images/c1item_3.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <p class="name">ミートソースパスタ</p>
+                    <p class="price">980</p>
+                    <select class="form-control form-control-sm w-auto" name="">
+                      <option selected>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="delete">
+                    <button class="btn btn-sm btn-primary btn-delete">削除</button>
+                  </div>
+                </li>
+              </ol>
             </div>
-            <p class="text-center mb-0 mt-2 small">応援金は全額お店に送られます。</p>
           </div>
-          <!-- collapse -->
-        </div>
-      </div>
-      <!-- .cart__option -->
-      <div class="pb-4">
-        <h3 class="ttl-horizon">
-          <span class="d-block container">その他のご要望</span>
-        </h3>
-        <div class="container">
-          <textarea
-            name=""
-            class="form-control"
-            rows="6"
-            placeholder="ご要望やお店に伝えたいことがございましたらご入力ください。&NewLine;例：「割り箸を○膳つけてほしい」「商品はできるだけ一つの袋にまとめて欲しい」"
-          ></textarea>
-        </div>
-      </div>
-      <div class="cart__amount pb-4">
-        <h3 class="ttl-horizon">
-          <span class="d-block container">合計金額</span>
-        </h3>
-        <div class="container">
-          <table class="w-100 table table-borderless">
-            <tbody>
-              <tr>
-                <th>小計</th>
-                <td>¥ 2,940</td>
-              </tr>
-              <tr>
-                <th>消費税</th>
-                <td>¥ 235</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <th>合計</th>
-                <td>¥ 3,175</td>
-              </tr>
-            </tfoot>
-          </table>
-        </div>
-      </div>
-      <div class="py-4 bg-light">
-        <div class="container">
-          <form class="d-flex justify-content-center form-btns" action="./order-form.html" action="./confirm.html">
-            <a class="btn btn-lg bg-white btn-back mr-2" href="./index.html">戻る</a>
-            <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#signup">注文へ進む</button>
-          </form>
-        </div>
-        <!-- modal -->
-        <div class="modal catalog-modal fsmodal fade" id="signup" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body rounded-bottom">
-                <h3 class="text-center">注文へ進む</h3>
-                <div class="text-center">
-                  <button class="btn btn-block btn-primary py-3" onclick="location.href='./order-form.html'">登録せず注文する</button>
-                </div>
-                <hr class="my-4" />
-                <p class="font-weight-bold text-center">ログイン</p>
-                <div class="form-group">
-                  <label for="" class="small">メールアドレス</label>
-                  <input type="email" name="" id="" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <label for="" class="small">パスワード</label>
-                  <input type="password" name="" id="" class="form-control" />
-                </div>
-                <div class="mt-4 text-center">
-                  <button class="btn btn-primary px-5" onclick="location.href='./order-form.html'">ログイン</button>
-                  <p class="small text-center mt-3 mb-0">
-                    <a class="text-muted" href="">パスワードを忘れたかたはこちら</a>
-                  </p>
-                </div>
+          <!-- .cart__list -->
+          <div class="cart__delidate pb-4">
+            <h3 class="ttl-horizon">
+              <span class="d-block container">お受け取りについて</span>
+            </h3>
+            <div class="container">
+              <div class="form-group">
+                <label for="changeReceive" class="small d-block">お受け取り方法</label>
+                <select id="changeReceive" class="form-control" name="changeReceive">
+                  <option>お持ち帰り(テイクアウト)</option>
+                  <option>デリバリー(配達)</option>
+                </select>
               </div>
-              <div class="modal-footer">
-                <p class="modal-close" data-dismiss="modal" aria-label="Close">カートに戻る</p>
+              <div class="form-group">
+                <label for="changeDeliveryDate" class="small d-block">お受け取り日時</label>
+                <select id="changeDeliveryDate" class="form-control" name="changeDeliveryDate">
+                  <option>2020年1月1日（本日）</option>
+                  <option>2020年1月2日（明日）</option>
+                  <option>2020年1月3日（水）</option>
+                  <option>2020年1月4日（木）</option>
+                  <option>2020年1月5日（金）</option>
+                </select>
               </div>
+              <div class="d-inline-block align-middle mr-2">
+                <select id="changeDeliveryTime" class="form-control form-control-sm d-inline-block align-middle w-auto" name="changeDeliveryTime">
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                </select>
+                <span class="d-inline-block align-middle ml-1 small">時</span>
+              </div>
+              <div class="d-inline-block align-middle">
+                <select id="changeDeliverySeconds" class="form-control form-control-sm d-inline-block align-middle w-auto" name="changeDeliverySeconds">
+                  <option>00</option>
+                  <option>15</option>
+                  <option>30</option>
+                  <option>45</option>
+                </select>
+                <span class="d-inline-block align-middle ml-1 small">分</span>
+              </div>
+              <p class="text-danger small mt-3">※日時やお受け取り場所の変更内容によっては商品がご注文いただけない場合がございます。</p>
+            </div>
+          </div>
+          <div class="cart__option">
+            <h3 class="ttl-horizon mb-0">
+              <span class="d-block container">オプション</span>
+            </h3>
+            <div id="collapse-wrap" class="collapse-wrap">
+              <!-- collapse -->
+              <div id="head-okimochi" data-toggle="collapse" data-target="#content-okimochi" aria-expanded="false" aria-controls="content-okimochi">
+                <span class="d-block container">
+                  <i data-feather="heart" class="text-primary d-inline-block align-middle mr-2"></i>
+                  <span class="d-inline-block align-middle">「TakeCafe」に応援金を送る</span>
+                  <i data-feather="plus-circle" class="position-absolute"></i>
+                </span>
+              </div>
+              <div id="content-okimochi" class="collapse container text-center" aria-labelledby="head-okimochi" data-parent="#collapse-wrap">
+                <div class="btn-group okimochi-btns" role="group">
+                  <button type="button" class="btn btn-outline-secondary active">￥0</button>
+                  <button type="button" class="btn btn-outline-secondary">￥100</button>
+                  <button type="button" class="btn btn-outline-secondary">￥200</button>
+                  <button type="button" class="btn btn-outline-secondary">￥500</button>
+                  <button type="button" class="btn btn-outline-secondary">￥1,000</button>
+                </div>
+                <p class="text-center mb-0 mt-2 small">応援金は全額お店に送られます。</p>
+              </div>
+              <!-- collapse -->
+            </div>
+          </div>
+          <!-- .cart__option -->
+          <div class="pb-4">
+            <h3 class="ttl-horizon">
+              <span class="d-block container">その他のご要望</span>
+            </h3>
+            <div class="container">
+              <textarea
+                name=""
+                class="form-control"
+                rows="6"
+                placeholder="ご要望やお店に伝えたいことがございましたらご入力ください。&NewLine;例：「割り箸を○膳つけてほしい」「商品はできるだけ一つの袋にまとめて欲しい」"
+              ></textarea>
             </div>
           </div>
         </div>
-        <!-- .modal -->
+        <div>
+          <div class="cart__amount pb-4">
+            <h3 class="ttl-horizon">
+              <span class="d-block container">合計金額</span>
+            </h3>
+            <div class="container">
+              <table class="w-100 table table-borderless">
+                <tbody>
+                  <tr>
+                    <th>小計</th>
+                    <td>¥ 2,940</td>
+                  </tr>
+                  <tr>
+                    <th>消費税</th>
+                    <td>¥ 235</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <td>¥ 3,175</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="py-4 bg-light">
+            <div class="container">
+              <form class="d-flex justify-content-center form-btns" action="./order-form.html" action="./confirm.html">
+                <a class="btn btn-lg bg-white btn-back mr-2" href="./index.html">戻る</a>
+                <button class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#signup">注文へ進む</button>
+              </form>
+            </div>
+            <!-- modal -->
+            <div class="modal catalog-modal fsmodal fade" id="signup" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body rounded-bottom">
+                    <h3 class="text-center">注文へ進む</h3>
+                    <div class="text-center">
+                      <button class="btn btn-block btn-primary py-3" onclick="location.href='./order-form.html'">登録せず注文する</button>
+                    </div>
+                    <hr class="my-4" />
+                    <p class="font-weight-bold text-center">ログイン</p>
+                    <div class="form-group">
+                      <label for="" class="small">メールアドレス</label>
+                      <input type="email" name="" id="" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="small">パスワード</label>
+                      <input type="password" name="" id="" class="form-control" />
+                    </div>
+                    <div class="mt-4 text-center">
+                      <button class="btn btn-primary px-5" onclick="location.href='./order-form.html'">ログイン</button>
+                      <p class="small text-center mt-3 mb-0">
+                        <a class="text-muted" href="">パスワードを忘れたかたはこちら</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <p class="modal-close" data-dismiss="modal" aria-label="Close">カートに戻る</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .modal -->
+          </div>
+        </div>
       </div>
     </main>
     <!-- #main -->

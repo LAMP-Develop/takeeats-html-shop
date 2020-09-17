@@ -1,7 +1,6 @@
 .catalog {
   @include media-breakpoint-up(md) {
     background-color: $white;
-    max-width: 1140px;
     margin: 0 auto 3rem;
   }
   &-cat {
@@ -112,6 +111,7 @@
     .btn {
       font-size: 13px;
       font-weight: bold;
+      padding: 7px;
     }
   }
 }

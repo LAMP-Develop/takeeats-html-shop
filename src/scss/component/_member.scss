@@ -65,6 +65,9 @@
 .orders {
   &-item {
     position: relative;
+    @include media-breakpoint-up(md) {
+      background-color: $white;
+    }
     &::after {
       content: "";
       display: block;

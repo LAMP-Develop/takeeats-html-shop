@@ -9,6 +9,11 @@ const feather = require("feather-icons");
 
 $(function () {
   let head_h = $("#header").outerHeight() + 16;
+  let window_w = $(window).outerWidth();
+  let telephone_no = '<meta name="format-detection" content="telephone=no">';
+
+  // meta制御
+  $("head meta:last").after(telephone_no);
 
   // featherIcons
   feather.replace({
@@ -95,6 +100,9 @@ $(function () {
   });
 
   // --- home ------------------------------------ //
+  if (window_w >= 990) {
+    $("#catalog").addClass("container");
+  }
   $(".addcart").on("click", function () {
     alert("カートに追加されました");
   });

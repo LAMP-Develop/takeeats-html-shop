@@ -4,6 +4,7 @@ body {
   letter-spacing: 0.06em;
   @include media-breakpoint-up(md) {
     padding-bottom: 0;
+    background-color: $light;
   }
   &.spopen {
     .overray {
@@ -18,8 +19,16 @@ body {
   }
   &.home {
     padding-bottom: 63px;
-    @include media-breakpoint-up(md) {
-      background-color: $light;
+  }
+  &:not(.home) {
+    #main {
+      & > *:not(.mv):not(.pc-two) {
+        @include media-breakpoint-up(md) {
+          max-width: 768px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
     }
   }
 }
@@ -58,8 +67,8 @@ img {
 }
 
 .home-slide-container {
+  padding: 0;
   @include media-breakpoint-down(md) {
-    padding: 0;
     max-width: 100%;
     width: 100%;
   }
@@ -99,11 +108,29 @@ img {
   }
 }
 
-.form-btns {
-  .btn-back {
-    width: 30%;
+.pc-two {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 980px;
+    margin: 0 auto 3rem;
   }
-  .btn-primary {
-    width: 60%;
+  & > div {
+    &:first-child {
+      @include media-breakpoint-up(md) {
+        width: 65%;
+      }
+    }
+    &:last-child {
+      @include media-breakpoint-up(md) {
+        width: 32.5%;
+      }
+    }
+    &>* {
+      @include media-breakpoint-up(md) {
+        background-color: $white;
+      }
+    }
   }
 }

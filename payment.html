@@ -123,7 +123,7 @@
           <h2>お支払い情報入力</h2>
         </div>
       </section>
-      <div class="mv__step">
+      <div class="mv__step mb-md-5">
         <div class="container">
           <ol class="mv__step-count">
             <li class="visited"><em>情報入力</em></li>
@@ -134,98 +134,102 @@
         </div>
       </div>
 
-      <form action="./confirm.html" method="post">
-        <div class="py-4">
-          <div class="container">
-            <h3 class="form-ttl">お支払い情報</h3>
-            <div class="form-group">
-              <label class="small d-block form-must" for="">お支払い方法(選択)</label>
-              <select class="form-control" id="pay" name="pay">
-                <option value="0" selected>クレジットカード決済</option>
-                <option value="1">店舗でお支払い</option>
-              </select>
-              <script
-                type="text/javascript"
-                src="https://checkout.pay.jp/"
-                class="payjp-button"
-                data-key="pk_test_a0727685f74f89262de1a310"
-                data-submit-text="更新して閉じる"
-                data-partial="true"
-              ></script>
-            </div>
-            <!-- .form-group -->
-            <div class="form-group">
-              <label class="small d-block" for="">ポイントを使用する</label>
-              <div class="input-group">
-                <input type="number" value="0" class="form-control" aria-describedby="basic-pt" />
-                <div class="input-group-append">
-                  <span class="input-group-text" id="basic-pt">pt</span>
-                </div>
+      <form class="pc-two" action="./confirm.html" method="post">
+        <div>
+          <div class="py-4">
+            <div class="container">
+              <h3 class="form-ttl">お支払い情報</h3>
+              <div class="form-group">
+                <label class="small d-block form-must" for="">お支払い方法(選択)</label>
+                <select class="form-control" id="pay" name="pay">
+                  <option value="0" selected>クレジットカード決済</option>
+                  <option value="1">店舗でお支払い</option>
+                </select>
+                <script
+                  type="text/javascript"
+                  src="https://checkout.pay.jp/"
+                  class="payjp-button"
+                  data-key="pk_test_a0727685f74f89262de1a310"
+                  data-submit-text="適用して閉じる"
+                  data-partial="true"
+                ></script>
               </div>
-              <small id="" class="form-text d-block mt-1 text-right">
-                保有ポイント
-                <span id="have-pt" class="ml-2">120</span>
-                pt
-              </small>
+              <!-- .form-group -->
+              <div class="form-group">
+                <label class="small d-block" for="">ポイントを使用する</label>
+                <div class="input-group">
+                  <input type="number" value="0" class="form-control" aria-describedby="basic-pt" />
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-pt">pt</span>
+                  </div>
+                </div>
+                <small id="" class="form-text d-block mt-1 text-right">
+                  保有ポイント
+                  <span id="have-pt" class="ml-2">120</span>
+                  pt
+                </small>
+              </div>
+              <!-- .form-group -->
+              <div class="form-group mb-0">
+                <label class="small d-block" for="">クーポンのご利用</label>
+                <input type="text" name="coupon" class="form-control" id="coupon" />
+                <small id="couponSuccess" class="form-text mt-1 text-primary" style="display: none">現在ご利用いただけないクーポンです。</small>
+              </div>
+              <!-- .form-group -->
             </div>
-            <!-- .form-group -->
-            <div class="form-group mb-0">
-              <label class="small d-block" for="">クーポンのご利用</label>
-              <input type="text" name="coupon" class="form-control" id="coupon" />
-              <small id="couponSuccess" class="form-text mt-1 text-primary" style="display: none">現在ご利用いただけないクーポンです。</small>
+          </div>
+          <div class="py-4">
+            <h3 class="ttl-horizon">
+              <span class="d-block container">領収書について</span>
+            </h3>
+            <div class="container">
+              <div class="form-group form-check mb-0">
+                <input type="checkbox" class="form-check-input" id="receipt" />
+                <label class="form-check-label" for="receipt">領収書をつける</label>
+              </div>
             </div>
-            <!-- .form-group -->
           </div>
         </div>
-        <div class="py-4">
-          <h3 class="ttl-horizon">
-            <span class="d-block container">領収書について</span>
-          </h3>
-          <div class="container">
-            <div class="form-group form-check mb-0">
-              <input type="checkbox" class="form-check-input" id="receipt" />
-              <label class="form-check-label" for="receipt">領収書をつける</label>
+        <div>
+          <div class="py-4 pt-md-0 pb-4 cart__amount">
+            <h3 class="ttl-horizon">
+              <span class="d-block container">合計金額</span>
+            </h3>
+            <div class="container">
+              <table class="w-100 table table-borderless">
+                <tbody>
+                  <tr>
+                    <th>小計</th>
+                    <td>¥ 2,940</td>
+                  </tr>
+                  <tr>
+                    <th>消費税</th>
+                    <td>¥ 235</td>
+                  </tr>
+                  <tr>
+                    <th>クーポン利用</th>
+                    <td class="text-primary">-¥ 0</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>合計</th>
+                    <td>¥ 3,175</td>
+                  </tr>
+                  <tr class="small">
+                    <th>獲得ポイント</th>
+                    <td>31pt</td>
+                  </tr>
+                </tfoot>
+              </table>
             </div>
           </div>
-        </div>
-        <div class="py-4 cart__amount">
-          <h3 class="ttl-horizon">
-            <span class="d-block container">合計金額</span>
-          </h3>
-          <div class="container">
-            <table class="w-100 table table-borderless">
-              <tbody>
-                <tr>
-                  <th>小計</th>
-                  <td>¥ 2,940</td>
-                </tr>
-                <tr>
-                  <th>消費税</th>
-                  <td>¥ 235</td>
-                </tr>
-                <tr>
-                  <th>クーポン利用</th>
-                  <td class="text-primary">-¥ 0</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th>合計</th>
-                  <td>¥ 3,175</td>
-                </tr>
-                <tr class="small">
-                  <th>獲得ポイント</th>
-                  <td>31pt</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-        <div class="py-4 bg-light">
-          <div class="container">
-            <div class="d-flex justify-content-center form-btns">
-              <a class="btn btn-lg bg-white btn-back mr-2" href="./cart.html">戻る</a>
-              <button class="btn btn-lg btn-primary" type="submit">確認画面へ</button>
+          <div class="py-4 bg-light">
+            <div class="container">
+              <div class="d-flex justify-content-center form-btns">
+                <a class="btn btn-lg bg-white btn-back mr-2" href="./cart.html">戻る</a>
+                <button class="btn btn-lg btn-primary" type="submit">確認画面へ</button>
+              </div>
             </div>
           </div>
         </div>
