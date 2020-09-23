@@ -25,7 +25,7 @@ $(function () {
 
   // STEP1
   $("#step1")
-    .find("button")
+    .find(".btn")
     .on("click", function () {
       $("#step1").removeClass("show active");
       $("#step2").addClass("show active");
@@ -35,13 +35,32 @@ $(function () {
     });
   // STEP1
   $("#step2")
-    .find("button")
+    .find(".btn")
     .on("click", function () {
       $("#step2").removeClass("show active");
       $("#step3").addClass("show active");
       $("#first-progress .steps").text("3/3");
       $("#first-progress .progress-bar").css("width", "66.66666%");
-      $("#first-progress .progress-bar").attr("aria-valuenow", "33.666666");
+      $("#first-progress .progress-bar").attr("aria-valuenow", "66.66666%");
+    });
+  $("#step2")
+    .find(".btn-back")
+    .on("click", function () {
+      $("#step2").removeClass("show active");
+      $("#step1").addClass("show active");
+      $("#first-progress .steps").text("1/3");
+      $("#first-progress .progress-bar").css("width", "0");
+      $("#first-progress .progress-bar").attr("aria-valuenow", "0");
+    });
+  // STEP3
+  $("#step3")
+    .find(".btn-back")
+    .on("click", function () {
+      $("#step3").removeClass("show active");
+      $("#step2").addClass("show active");
+      $("#first-progress .steps").text("2/3");
+      $("#first-progress .progress-bar").css("width", "33.33333%");
+      $("#first-progress .progress-bar").attr("aria-valuenow", "33.33333");
     });
 
   // スムーススクロール
@@ -105,6 +124,7 @@ $(function () {
   }
   $(".addcart").on("click", function () {
     alert("カートに追加されました");
+    $(".modal").modal("hide");
   });
 
   // --- cart ------------------------------------ //
