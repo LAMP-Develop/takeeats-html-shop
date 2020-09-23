@@ -5,6 +5,7 @@ import "../scss/app.scss";
 import "bootstrap";
 import "bootstrap-input-spinner";
 import "slick-carousel";
+import "select2";
 const feather = require("feather-icons");
 
 $(function () {
@@ -44,7 +45,7 @@ $(function () {
       $("#first-progress .progress-bar").attr("aria-valuenow", "66.66666%");
     });
   $("#step2")
-    .find(".btn-back")
+    .find(".btn-step-back")
     .on("click", function () {
       $("#step2").removeClass("show active");
       $("#step1").addClass("show active");
@@ -54,7 +55,7 @@ $(function () {
     });
   // STEP3
   $("#step3")
-    .find(".btn-back")
+    .find(".btn-step-back")
     .on("click", function () {
       $("#step3").removeClass("show active");
       $("#step2").addClass("show active");
@@ -125,6 +126,9 @@ $(function () {
   $(".addcart").on("click", function () {
     alert("カートに追加されました");
     $(".modal").modal("hide");
+  });
+  $("#deliveryShop").select2({
+    theme: 'bootstrap4',
   });
 
   // --- cart ------------------------------------ //

@@ -21,11 +21,13 @@
   "author": "LAMP",
   "license": "ISC",
   "dependencies": {
+    "@ttskch/select2-bootstrap4-theme": "^1.4.0",
     "bootstrap": "^4.5.2",
     "bootstrap-input-spinner": "^1.15.4",
     "feather-icons": "^4.28.0",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.0",
+    "select2": "^4.0.13",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
