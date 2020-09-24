@@ -128,7 +128,8 @@ $(function () {
     $(".modal").modal("hide");
   });
   $("#deliveryShop").select2({
-    theme: 'bootstrap4',
+    theme: "bootstrap4",
+    placeholder: "キーワードで検索",
   });
 
   // --- cart ------------------------------------ //
