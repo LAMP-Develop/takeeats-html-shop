@@ -175,7 +175,7 @@
                     <span class="catalog-price-tax">（税込）</span>
                   </div>
                   <div class="catalog-btn">
-                    <button class="btn btn-block btn-primary" type="button" data-toggle="modal" data-target="#modal-item1">選択済み</button>
+                    <button class="btn btn-block btn-light" type="button" data-toggle="modal" data-target="#modal-item2">数量・オプションを選ぶ</button>
                   </div>
                   <!-- modal -->
                   <div class="modal catalog-modal fade" id="modal-item1" tabindex="-1" aria-labelledby="modal-item1Label" aria-hidden="true">
@@ -669,23 +669,22 @@
                     <option>2020年1月5日（金）</option>
                   </select>
                 </div>
-                <div class="d-inline-block align-middle mr-2">
-                  <select id="deliveryTime" class="form-control form-control-sm d-inline-block align-middle w-auto" name="deliveryTime">
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
+                <div class="form-group">
+                  <select id="delivery_time" class="form-control" name="delivery_time">
+                    <option value="">11:00</option>
+                    <option value="">11:15</option>
+                    <option value="">11:30</option>
+                    <option value="">11:45</option>
+                    <option value="">12:00</option>
+                    <option value="">12:15</option>
+                    <option value="">12:30</option>
+                    <option value="">12:45</option>
+                    <option value="">13:00</option>
+                    <option value="">12:15</option>
+                    <option value="">12:30</option>
+                    <option value="">12:45</option>
+                    <option value="">13:00</option>
                   </select>
-                  <span class="d-inline-block align-middle ml-1 small">時</span>
-                </div>
-                <div class="d-inline-block align-middle">
-                  <select id="deliverySeconds" class="form-control form-control-sm d-inline-block align-middle w-auto" name="deliverySeconds">
-                    <option>00</option>
-                    <option>15</option>
-                    <option>30</option>
-                    <option>45</option>
-                  </select>
-                  <span class="d-inline-block align-middle ml-1 small">分</span>
                 </div>
                 <div class="text-center mt-4">
                   <button class="btn-step-back mr-1" type="button">
@@ -751,25 +750,22 @@
                   <option>2020年1月5日（金）</option>
                 </select>
               </div>
-              <div class="form-row">
-                <div class="col-4">
-                  <select id="changeDeliveryTime" class="form-control d-inline-block align-middle w-auto" name="changeDeliveryTime">
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                  </select>
-                  <span class="d-inline-block align-middle ml-1">時</span>
-                </div>
-                <div class="col-4">
-                  <select id="changeDeliverySeconds" class="form-control d-inline-block align-middle w-auto" name="changeDeliverySeconds">
-                    <option>00</option>
-                    <option>15</option>
-                    <option>30</option>
-                    <option>45</option>
-                  </select>
-                  <span class="d-inline-block align-middle ml-1">分</span>
-                </div>
+              <div class="form-group">
+                <select id="delivery_time" class="form-control" name="delivery_time">
+                  <option value="">11:00</option>
+                  <option value="">11:15</option>
+                  <option value="">11:30</option>
+                  <option value="">11:45</option>
+                  <option value="">12:00</option>
+                  <option value="">12:15</option>
+                  <option value="">12:30</option>
+                  <option value="">12:45</option>
+                  <option value="">13:00</option>
+                  <option value="">12:15</option>
+                  <option value="">12:30</option>
+                  <option value="">12:45</option>
+                  <option value="">13:00</option>
+                </select>
               </div>
               <p class="text-danger small mt-3">※日時や場所の変更で購入可能な商品が変わる可能性がございます。</p>
               <div class="text-center mt-4">

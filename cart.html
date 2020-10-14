@@ -222,23 +222,22 @@
                   <option>2020年1月5日（金）</option>
                 </select>
               </div>
-              <div class="d-inline-block align-middle mr-2">
-                <select id="changeDeliveryTime" class="form-control form-control-sm d-inline-block align-middle w-auto" name="changeDeliveryTime">
-                  <option>11</option>
-                  <option>12</option>
-                  <option>13</option>
-                  <option>14</option>
+              <div class="form-group">
+                <select id="delivery_time" class="form-control" name="delivery_time">
+                  <option value="">11:00</option>
+                  <option value="">11:15</option>
+                  <option value="">11:30</option>
+                  <option value="">11:45</option>
+                  <option value="">12:00</option>
+                  <option value="">12:15</option>
+                  <option value="">12:30</option>
+                  <option value="">12:45</option>
+                  <option value="">13:00</option>
+                  <option value="">12:15</option>
+                  <option value="">12:30</option>
+                  <option value="">12:45</option>
+                  <option value="">13:00</option>
                 </select>
-                <span class="d-inline-block align-middle ml-1 small">時</span>
-              </div>
-              <div class="d-inline-block align-middle">
-                <select id="changeDeliverySeconds" class="form-control form-control-sm d-inline-block align-middle w-auto" name="changeDeliverySeconds">
-                  <option>00</option>
-                  <option>15</option>
-                  <option>30</option>
-                  <option>45</option>
-                </select>
-                <span class="d-inline-block align-middle ml-1 small">分</span>
               </div>
               <p class="text-danger small mt-3">※日時やお受け取り場所の変更内容によっては商品がご注文いただけない場合がございます。</p>
             </div>
@@ -256,7 +255,7 @@
                   <i data-feather="plus-circle" class="position-absolute"></i>
                 </span>
               </div>
-              <div id="content-okimochi" class="collapse container text-center" aria-labelledby="head-okimochi" data-parent="#collapse-wrap">
+              <div id="content-okimochi" class="collapse show container text-center" aria-labelledby="head-okimochi" data-parent="#collapse-wrap">
                 <div class="btn-group okimochi-btns" role="group">
                   <button type="button" class="btn btn-outline-secondary active">￥0</button>
                   <button type="button" class="btn btn-outline-secondary">￥100</button>
@@ -279,7 +278,7 @@
                 name=""
                 class="form-control"
                 rows="6"
-                placeholder="ご要望やお店に伝えたいことがございましたらご入力ください。&NewLine;例：「割り箸を○膳つけてほしい」「商品はできるだけ一つの袋にまとめて欲しい」"
+                placeholder="ご要望やお店に伝えたいことがございましたらご入力ください。"
               ></textarea>
             </div>
           </div>
@@ -320,22 +319,20 @@
                   <div class="modal-body rounded-bottom">
                     <h3 class="text-center">会員ログイン</h3>
                     <div class="text-center">
-                      <button class="btn btn-block btn-primary py-3" onclick="location.href='./order-form.html'">登録せず注文する</button>
+                      <p class="small">会員登録をしない方はこちらからお進みください。<br>次のページで<b>新規会員登録</b>も可能です。</p>
+                      <a href="./order-form.html" class="btn btn-block btn-primary py-3" id="submitbtn">ログインせず注文</a>
                     </div>
-                    <hr class="my-4" />
+                    <hr class="my-4">
                     <div class="form-group">
                       <label for="" class="small">メールアドレス</label>
-                      <input type="email" name="" id="" class="form-control" />
+                      <input type="email" name="login_email" id="login_email" class="form-control">
                     </div>
                     <div class="form-group">
                       <label for="" class="small">パスワード</label>
-                      <input type="password" name="" id="" class="form-control" />
+                      <input type="password" name="login_password" id="login_password" class="form-control">
                     </div>
                     <div class="mt-4 text-center">
-                      <button class="btn btn-dark px-5" onclick="location.href='./order-form.html'">ログインする</button>
-                      <p class="small text-center mt-3 mb-0">
-                        <a class="text-muted" href="">パスワードを忘れたかたはこちら</a>
-                      </p>
+                      <a href="./order-form.html" class="btn btn-dark px-5" id="width-login">ログインする</a>
                     </div>
                   </div>
                   <div class="modal-footer">
