@@ -45,3 +45,25 @@
     }
   }
 }
+
+a.sns-fb, a.sns-tw {
+  display: block;
+  padding: .25rem;
+  border-radius: 5px;
+  line-height: 1;
+  color: #fff;
+}
+a.sns-fb {
+  background-color: #3b5998;
+}
+a.sns-tw {
+  background-color: #1da1f2;
+}
+a.sns-ins {
+  display: block;
+  padding: .25rem;
+  border-radius: 5px;
+  line-height: 1;
+  color: #fff;
+  background-color: #c13584;
+}
